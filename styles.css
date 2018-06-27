@@ -1,0 +1,266 @@
+html {
+
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  --blendMode: multiply;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: .5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  width: calc(100vw + 300px);
+  margin-left: -300px;
+  transition: all .5s;
+  background-color: orange;
+}
+
+.open-menu main {
+  width: 100vw;
+  margin-left: 0;
+}
+
+.mode-panel-container {
+  flex: 0 0 300px;
+}
+
+button {
+  color: white;
+  border: 1px solid white;
+  background: slategray;
+  line-height: 1;
+  cursor: pointer;
+  height: 40px;
+}
+
+.color-picker {
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.color-picker label {
+  padding: 0;
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+
+.color-picker-input {
+  width: 100% !important;
+  display: block;
+  -webkit-appearance: none;
+  border-color: orange;
+
+}
+
+
+input[type="color" i] {
+    -webkit-appearance: square-button;
+    width: 100%;
+    height: 100px;
+    background-color: buttonface;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(44,44,44);
+    border-image: initial;
+    padding: 1px 2px;
+}
+
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7,1fr);
+  grid-template-areas:
+      'box1 box2 box2 box3'
+      'box4 box2 box2 box5'
+      'box6 box6 box7 box8'
+      'box6 box6 box9 box10'
+      'box11 box11 box12 box10'
+      'box13 box13 box14 box14'
+      'box15 box16 box14 box14'
+      ;
+  }
+
+
+
+.grid-item {
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.grid-item:hover {
+  cursor: pointer;
+  background-blend-mode: var(--blendMode);
+}
+
+
+.item-description {
+  height: 100%;
+  transform: translateY(100%);
+  transition: .35s;
+    padding: 2rem;
+}
+
+.open .item-description {
+  transform:translateY(0%);
+}
+.item-description h2{
+  color: white;
+  font-size: 1.25rem;
+}
+
+.item-description p {
+  color: white;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.item-description:hover {
+  opacity: .8;
+}
+
+
+.grid-item1 {
+  grid-area: box1;
+}
+.grid-item2 {
+  grid-area: box2;
+}
+.grid-item3 {
+  grid-area: box3;
+}
+.grid-item4 {
+  grid-area: box4;
+}
+.grid-item5 {
+  grid-area: box5;
+}
+.grid-item6 {
+  grid-area: box6;
+}
+.grid-item7 {
+  grid-area: box7;
+}
+.grid-item8 {
+  grid-area: box8;
+}
+.grid-item9 {
+  grid-area: box9;
+}
+.grid-item10 {
+  grid-area: box10;
+}
+.grid-item11 {
+  grid-area: box11;
+}
+.grid-item12 {
+  grid-area: box12;
+}
+.grid-item13 {
+  grid-area: box13;
+}
+.grid-item14 {
+  grid-area: box14;
+}
+.grid-item15 {
+  grid-area: box15;
+}
+.grid-item16 {
+  grid-area: box16;
+}
+
+.mode-panel-container {
+  background-color: black;
+  color: white;
+}
+
+.input-label-container {
+  margin: 1px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #222;
+}
+
+[type='radio'] {
+  display: none;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  background-color: #;
+  font-family: "fira sans condensed";
+  font-family: "lato";
+  font-weight: 400;
+  font-size: 14px;
+    padding: 1rem;
+}
+
+label:hover {
+  background-color:hsla(240,20%,30%,.8);
+}
+
+
+.check {
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  box-sizing: border-box;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: black;
+  transition: background-color .25s;
+
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - 13px);
+}
+
+
+
+input:checked + label + .check,
+input:checked + label .check
+
+ {
+  background-color: yellow;
+  background-color: red;
+  background-color: slategrey;
+  animation: gently-pulsating .35s 1;
+}
+
+@keyframes gently-pulsating {
+
+  50% {
+    border-color: hsl(240,50%,30%);
+    border-color: black;
+    border-width: 4px;
+  }
+
+
+}

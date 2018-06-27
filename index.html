@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>CSS Blend Modes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>JavaScript Machinations Grid Image Gallery With Blend Modes</h1>
+  <div class="buttons">
+    <button class="close-panes">close panes</button>
+    <button class="mode-panel-toggle">choose mode</button>
+  </div>
+</header>
+
+<main>
+
+<div class="mode-panel-container">
+
+<form action="" class="mode-panel">
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="normal" id="rb01">
+     <label for="rb01">Normal <span class="check"></span></label>
+
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="multiply" id="rb02" checked>
+     <label for="rb02">Multiply <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="color" id="rb03">
+     <label for="rb03">Color <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="screen" id="rb04">
+     <label for="rb04">Screen <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="overlay" id="rb05">
+     <label for="rb05">Overlay <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="darken" id="rb06">
+     <label for="rb06">Darken <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="lighten" id="rb07">
+     <label for="rb07">Lighten <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="color-dodge" id="rb08">
+     <label for="rb08">Color-Dodge <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="color-burn" id="rb09">
+     <label for="rb09">Color-Burn <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="soft-light" id="rb10">
+     <label for="rb10">Soft-Light <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="hard-light" id="rb11">
+     <label for="rb11">Hard-Light <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="exclusion" id="rb12">
+     <label for="rb12">Exclusion <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="saturation" id="rb13">
+     <label for="rb13">Saturation <span class="check"></span></label>
+   </div>
+
+   <div class="input-label-container">
+     <input type="radio" name="blendmode" value="luminosity" id="rb14">
+     <label for="rb14">Luminosity <span class="check"></span></label>
+   </div>
+
+ </form>
+
+<form action="" class="color-picker">
+  <label for='color-input'>If you wish to set all the backgrounds to to a single color of your choice, select it here.</label>
+  <input type="color" id="color-input" class="color-input" value="#ccccdd">
+</form>
+
+</div>
+
+<div class="grid-container">
+
+  <div class="grid-item grid-item1">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item2">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item3">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item4">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item5">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item6">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item7">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item8">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item9">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item10">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item11">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item12">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item13">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item14">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item15">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="grid-item grid-item16">
+    <div class="item-description">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<script src="colour.js"></script>
+</body>
+</html>
